@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my Google map</title>
+    <style>
+        #map{
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Google map</h1>
+    <div id="map"></div>
+    <script>
+        function initMap() {
+            var option = {
+                zoom:8,
+                center:{lat:42.3601,lng:-71.0589}
+            }
+            var map = new
+             google.maps.Map(document.getElementBy('map'),option);
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.176212455381!2d80.14133061482119!3d12.896388190905268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525fbee3233e29%3A0x57239a1c8e5d626b!2sBharath%20Institute%20of%20Higher%20Education%20And%20Research!5e0!3m2!1sen!2sin!4v1671262801425!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</body>
+</html>
